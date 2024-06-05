@@ -11,3 +11,9 @@ from django.db import models
 class Membre(models.Model):
     first_name = models.fields.CharField(max_length=50)
     last_name = models.fields.CharField(max_length=50)
+    # email = models.EmailField(max_length=50)
+
+class Media(models.Model):
+    category = models.fields.CharField(max_length=100)
+    name = models.fields.CharField(max_length=150)
+    available = models.BooleanField(default=True)
