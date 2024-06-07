@@ -1,12 +1,11 @@
 from django.shortcuts import render
-
-# def listmembres(request):
-#     return render(request, 'bibliothecaire/index.html')
-
 from bibliothecaire.models import Membre
 from bibliothecaire.models import Media
 from bibliothecaire.forms import Ajoutmembre
 from bibliothecaire.forms import Ajoutmedia
+
+def home(request):
+    return render(request, 'bibliothecaire/home.html')
 
 
 # AFFICHAGE DE LA LISTE DES MEMBRES

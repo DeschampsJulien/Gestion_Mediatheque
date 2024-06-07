@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # APPEL DES NOUVELLES APPLICATIONS
-    'membre',
     'bibliothecaire',
+    'membre',
 ]
 
 MIDDLEWARE = [
